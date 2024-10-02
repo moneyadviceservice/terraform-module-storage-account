@@ -68,6 +68,6 @@ No modules.
 | Name | Description |
 |------|-------------|
 | <a name="output_primary_access_key"></a> [primary\_access\_key](#output\_primary\_access\_key) | The primary access key for the storage account. |
-| <a name="output_storage_account_id"></a> [storage\_account\_id](#output\_storage\_account\_id) | The storage account Resource ID. |
-| <a name="output_storage_account_name"></a> [storage\_account\_name](#output\_storage\_account\_name) | The storage account name. |
+| <a name="output_storageaccount_id"></a> [storageaccount\_id](#output\_storageaccount\_id) | The storage account Resource ID. |
+| <a name="output_storageaccount_name"></a> [storageaccount\_name](#output\_storageaccount\_name) | The storage account name. |
 <!-- END_TF_DOCS -->
