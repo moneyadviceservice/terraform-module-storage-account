@@ -47,12 +47,6 @@ variable "enable_data_protection" {
   default     = false
 }
 
-variable "enable_https_traffic_only" {
-  type        = bool
-  description = "(Optional) Boolean flag which forces HTTPS if enabled, see https://docs.microsoft.com/en-us/azure/storage/storage-require-secure-transfer/ for more information."
-  default     = true
-}
-
 variable "allow_nested_items_to_be_public" {
   type        = bool
   description = "(Optional) Allow or disallow public access to all blobs or containers in the storage account."
