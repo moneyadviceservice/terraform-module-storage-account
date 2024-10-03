@@ -13,50 +13,50 @@ variable "resource_group_name" {
 }
 
 variable "location" {
-  type = string
+  type        = string
   description = "(Required) Specifies the supported Azure location where the resource exists."
   default     = "uksouth"
 }
 
 variable "account_kind" {
-  type = string
+  type        = string
   description = "Defines the Kind of account. Valid options are Storage, StorageV2 and BlobStorage."
 }
 
 variable "account_tier" {
-  type = string
+  type        = string
   description = "Defines the Tier to use for this storage account. Valid options are Standard and Premium."
   default     = "Standard"
 }
 
 variable "account_replication_type" {
-  type = string
+  type        = string
   description = "(Required) Defines the type of replication to use for this storage account."
   default     = "LRS"
 }
 
 variable "access_tier" {
-  type = string
+  type        = string
   description = "(Optional) Defines the access tier for BlobStorage and StorageV2 accounts."
   default     = "Hot"
 }
 
 variable "enable_data_protection" {
-  type = bool
+  type        = bool
   description = "(Optional) Boolean flag which controls if Data Protection are enabled for Blob storage, see https://docs.microsoft.com/en-us/azure/storage/blobs/versioning-overview for more information."
-  default     = "false"
+  default     = false
 }
 
 variable "enable_https_traffic_only" {
-  type = bool
+  type        = bool
   description = "(Optional) Boolean flag which forces HTTPS if enabled, see https://docs.microsoft.com/en-us/azure/storage/storage-require-secure-transfer/ for more information."
-  default     = "true"
+  default     = true
 }
 
 variable "allow_nested_items_to_be_public" {
-  type = bool
+  type        = bool
   description = "(Optional) Allow or disallow public access to all blobs or containers in the storage account."
-  default     = "false"
+  default     = false
 }
 
 variable "enable_hns" {
@@ -98,7 +98,7 @@ variable "default_action" {
 }
 
 variable "managed_identity_object_id" {
-  type = string
+  type        = string
   description = "(Optional) Object Id for a Managed Identity to assign roles to, scoped to this storage account."
   default     = ""
 }
@@ -153,8 +153,8 @@ variable "cors_rules" {
 }
 
 variable "enable_change_feed" {
-  type = bool
-  default = "false"
+  type    = bool
+  default = false
 }
 
 variable "enable_versioning" {
@@ -164,19 +164,19 @@ variable "enable_versioning" {
 }
 
 variable "immutable_enabled" {
-  type = bool
-  default = "false"
+  type    = bool
+  default = false
 }
 
 variable "immutability_period" {
-  type = number
-  default = "1"
+  type        = number
+  default     = "1"
   description = "The immutability period for the blobs in the container since the policy creation, in days."
 }
 
 variable "restore_policy_days" {
-  type = number
-  default = null
+  type        = number
+  default     = null
   description = "Specifies the number of days that the blob can be restored, between 1 and 365 days."
 }
 
