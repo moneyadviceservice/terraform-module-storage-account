@@ -28,6 +28,7 @@ resource "azurerm_storage_account" "this" {
   account_replication_type        = var.account_replication_type
   access_tier                     = var.access_tier
   min_tls_version                 = "TLS1_2"
+  allowed_copy_scope              = "AAD"
   allow_nested_items_to_be_public = var.allow_nested_items_to_be_public
   sftp_enabled                    = var.enable_sftp
   is_hns_enabled                  = var.enable_hns
